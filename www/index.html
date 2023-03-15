@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <h1>Veiculo</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>KM</h2>
+            <input type="number" step="0.01" id="km">
+            <h2>Litros</h2>
+            <input type="number" step="0.01" id="litro">
+            <h2>Veiculo</h2>
+            <input type="text" id="veiculo">
+            <p><button onclick="enviar()">Adicionar</button></p>
+            <span></span>
+            <h2>Histórico</h2>
+            <table>
+                <tr>
+                    <td><h2>KM</h2></td>
+                    <td><h2>Economia</h2></td>
+                    <td><h2>Veiculo</h2></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
